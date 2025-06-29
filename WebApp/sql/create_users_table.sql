@@ -1,0 +1,10 @@
+
+CREATE DATABASE IF NOT EXISTS webapp_db;
+USE webapp_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255)
+);
